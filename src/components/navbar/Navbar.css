@@ -1,0 +1,21 @@
+.navbar {
+    background-color: grey;
+}
+
+.nav-wrap {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.link-contain ul {
+  display: flex;
+  list-style: none;
+}
+
+.link-contain ul li {
+  margin-left: 2em;
+}
