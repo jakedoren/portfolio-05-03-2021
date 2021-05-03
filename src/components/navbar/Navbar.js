@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="navbar">
             <div className="nav-wrap">
                 <div>
-                    <WbSunnyIcon />
+                    <WbSunnyIcon style={{color: '#EEC807', fontSize: '2.5em'}} />
                 </div>
                 <div className="link-contain">
                     <ul>

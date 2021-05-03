@@ -1,11 +1,9 @@
 .hero {
-  height: 100vh;
-  background-color: blue;
+  height: 87vh;
 }
 
 .hero-wrap {
-  width: 85%;
-  background-color: brown;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -13,15 +11,52 @@
 
 .flex1 {
   flex: 1;
-  background-color: cornflowerblue;
 }
 
 .flex2 {
   flex: 1;
-  background-color: cornsilk;
 }
 
 .flex1,
 .flex2 {
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-img {
+  height: 100%;
+}
+
+.img-contain {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.herotext-contain {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.herotext-contain ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.herotext-contain ul li {
+  margin-right: 1em;
+}
+
+.herotext-contain h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+.herotext-contain p {
+  font-size: 2em;
 }
