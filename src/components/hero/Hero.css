@@ -1,0 +1,27 @@
+.hero {
+  height: 100vh;
+  background-color: blue;
+}
+
+.hero-wrap {
+  width: 85%;
+  background-color: brown;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+  background-color: cornflowerblue;
+}
+
+.flex2 {
+  flex: 1;
+  background-color: cornsilk;
+}
+
+.flex1,
+.flex2 {
+  height: 100%;
+}

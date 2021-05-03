@@ -1,18 +1,20 @@
 import React from 'react'
 import './Navbar.css'
+import {Link} from 'react-router-dom'
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="nav-wrap">
                 <div>
-                    <h1>Jacob Doren</h1>
+                    <WbSunnyIcon />
                 </div>
                 <div className="link-contain">
                     <ul>
-                        <li>Home</li>
-                        <li>Work</li>
-                        <li>Contact</li>
+                        <Link to="/"><li>Home</li></Link>
+                        <Link to="/work"><li>Work</li></Link>
+                        <Link to="/contact"><li>Contact</li></Link>
                     </ul>
                 </div>
             </div>

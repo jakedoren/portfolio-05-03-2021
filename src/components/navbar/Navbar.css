@@ -1,5 +1,10 @@
 .navbar {
-    background-color: grey;
+  background-color: grey;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
 }
 
 .nav-wrap {
@@ -18,4 +23,8 @@
 
 .link-contain ul li {
   margin-left: 2em;
+}
+
+ul a {
+  text-decoration: none;
 }
