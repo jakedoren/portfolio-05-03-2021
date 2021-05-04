@@ -93,7 +93,7 @@ form textarea {
 }
 
 .form-dark {
-  background-color: #8893a6;
+  background-color: #606875;
 }
 
 .input-dark {
@@ -107,7 +107,8 @@ form textarea {
 
 .submit-dark {
   /* background-color: #616161; */
-  background-color: #9b9898;
+  /* background-color: #9b9898; */
+  background-color: #02a884;
 }
 .submit-dark:hover {
   -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.47);
