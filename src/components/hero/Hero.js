@@ -13,8 +13,8 @@ const Hero = () => {
                         <h1>Hi, I'm Jake</h1>
                         <p>A Full-Stack Engineer</p>
                         <ul>
-                            <li><LinkedInIcon style={{fontSize: '2em'}} /></li>
-                            <li><GitHubIcon style={{fontSize: '2em'}}/></li>
+                            <a href="https://www.linkedin.com/in/jacobdoren/" target="_"><li><LinkedInIcon style={{fontSize: '2em'}} /></li></a>
+                            <a href="https://github.com/jakedoren" target="_"><li><GitHubIcon style={{fontSize: '2em'}}/></li></a> 
                         </ul>
                     </div>
                 </div>
