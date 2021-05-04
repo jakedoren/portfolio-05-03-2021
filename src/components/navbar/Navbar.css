@@ -30,3 +30,7 @@ ul a {
 ul a:hover {
   color: #3053d3;
 }
+
+.sun {
+  cursor: pointer;
+}

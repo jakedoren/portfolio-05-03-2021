@@ -1,12 +1,13 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Navbar from '../navbar/Navbar'
 import Hero from '../hero/Hero'
 
-const Home = () => {
+const Home = (props) => {
+
     return (
         <div>
-            <Navbar />
-            <Hero />
+            <Navbar setDarkMode={props.setDarkMode} darkMode={props.darkMode}/>
+            <Hero darkMode={props.darkMode}/>
         </div>
     )
 }

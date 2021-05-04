@@ -2,6 +2,11 @@
   height: 87vh;
 }
 
+.hero-dark {
+  height: 87vh;
+  background-color: blue;
+}
+
 .hero-wrap {
   width: 70%;
   height: 100%;
