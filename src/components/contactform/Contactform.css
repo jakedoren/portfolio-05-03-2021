@@ -2,6 +2,10 @@
   height: 87vh;
 }
 
+.contactform-dark {
+  background-color: #424b58;
+}
+
 .contactform-wrapper {
   width: 70%;
   height: 100%;
@@ -84,6 +88,28 @@ form textarea {
   transition: all 0.3s ease-in-out;
 }
 .submit:hover {
+  -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.17);
+}
+
+.form-dark {
+  background-color: #8893a6;
+}
+
+.input-dark {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.input-dark::placeholder {
+  color: white;
+}
+
+.submit-dark {
+  /* background-color: #616161; */
+  background-color: #9b9898;
+}
+.submit-dark:hover {
   -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.17);
 }

@@ -4,7 +4,7 @@
 
 .hero-dark {
   height: 87vh;
-  background-color: blue;
+  background-color: #424b58;
 }
 
 .hero-wrap {
@@ -64,4 +64,12 @@
 }
 .herotext-contain p {
   font-size: 2em;
+}
+
+.herotext-dark {
+  color: #fff;
+}
+
+.icons-dark {
+  color: #00e6b3;
 }

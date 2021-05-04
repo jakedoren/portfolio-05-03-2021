@@ -1,25 +1,29 @@
 import React from 'react'
 import './Contactform.css'
+import ThemeContext from '../../ThemeContext'
+
 
 const Contactform = () => {
+    const {dark} = React.useContext(ThemeContext);
+
     return (
-        <div className="contactform">
+        <div className={dark ? "contactform contactform-dark" : "contactform"}>
             <div className="contactform-wrapper">
-                <form action="POST" data-netlify="true" >
+                <form action="POST" data-netlify="true" className={dark ? "form-dark" : null} >
                     <div>
-                        <h1>Get In Touch</h1>
+                        <h1 style={{color: dark ? "white" : null}}>Get In Touch</h1>
                     </div>
                     <div className="name">
-                       <input type="text" name="name" id="name" placeholder="name" /> 
+                       <input type="text" name="name" id="name" placeholder="name" className={dark ? "input-dark" : null}/> 
                     </div>
                     <div className="email">
-                        <input type="email" name="email" id="email" placeholder="email" />
+                        <input type="email" name="email" id="email" placeholder="email" className={dark ? "input-dark" : null} />
                     </div>
                     <div className="message">
-                        <textarea name="message" id="message" placeholder="message" rows="7"/>
+                        <textarea name="message" id="message" placeholder="message" rows="7" className={dark ? "input-dark" : null}/>
                     </div>
-                    <button className="submit" type="submit">
-                        <h1>Submit</h1>
+                    <button className={dark ? "submit submit-dark" : "submit"} type="submit">
+                        <h1 style={{color: dark ? "white" : null}}>Submit</h1>
                     </button>
                 </form>
             </div>

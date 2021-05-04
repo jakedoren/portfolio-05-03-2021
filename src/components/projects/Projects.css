@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.projects-dark {
+  background-color: #424b58;
+}
+
 .projects-wrap {
   width: 70%;
   margin: 0 auto;
@@ -37,6 +41,12 @@
   box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.13);
   transition: all 0.3s ease-in-out;
 }
+
+.card-dark {
+  background-color: #606875;
+  color: #fff;
+}
+
 .card:hover {
   -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.33);
@@ -86,4 +96,8 @@
 }
 .card ul a:hover {
   color: #3053d3;
+}
+
+.darkcard-icons {
+  color: #00e6b3;
 }

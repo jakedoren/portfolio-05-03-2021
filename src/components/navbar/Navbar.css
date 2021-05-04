@@ -5,6 +5,10 @@
   width: 100vw;
 }
 
+.nav-dark {
+  background-color: #424b58;
+}
+
 .nav-wrap {
   display: flex;
   justify-content: space-between;
