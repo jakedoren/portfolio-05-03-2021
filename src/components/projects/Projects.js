@@ -19,8 +19,8 @@ const Projects = () => {
                             <h1>Easychat</h1>
                             <p>Easychat is a web-based chat application allowing users to Join rooms and talk with all users of the room</p>
                             <ul>
-                                <li><GitHubIcon /></li>
-                                <li>Live</li>
+                                <a href="https://github.com/jakedoren/react-socket-chatapp-client"><li><GitHubIcon /></li></a>
+                                <a href="https://easierchat.netlify.app/"><li>Live</li></a>
                             </ul>
                         </div>
                     </div>
@@ -32,8 +32,8 @@ const Projects = () => {
                             <h1>Character API</h1>
                             <p>This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd</p>
                             <ul>
-                                <li><GitHubIcon /></li>
-                                <li>Live</li>
+                                <a href="https://github.com/jakedoren/ricknmorty-api"><li><GitHubIcon /></li></a>
+                                <a href="https://compassionate-tesla-e7e979.netlify.app/"><li>Live</li></a>
                             </ul>
                         </div>
                     </div>
@@ -45,8 +45,8 @@ const Projects = () => {
                             <h1>Character Gen</h1>
                             <p>This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd</p>
                             <ul>
-                                <li><GitHubIcon /></li>
-                                <li>Live</li>
+                                <a href="https://github.com/jakedoren/rickandmorty-gen"><li><GitHubIcon /></li></a>
+                                <a href="https://sharp-blackwell-56aa0f.netlify.app/"><li>Live</li></a>
                             </ul>
                         </div>
                     </div>

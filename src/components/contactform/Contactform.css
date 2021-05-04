@@ -1,0 +1,73 @@
+.contactform {
+  height: 87vh;
+  background-color: blue;
+}
+
+.contactform-wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: brown;
+}
+
+.contactform-wrapper form {
+  background-color: cadetblue;
+  height: 25em;
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+form input {
+  margin: 1em 0;
+}
+
+.contactform-wrapper form div h1 {
+  text-align: center;
+}
+
+.name {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#name {
+  width: 100%;
+}
+
+.email {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#email {
+  width: 100%;
+}
+
+.message {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#message {
+  width: 100%;
+}
+
+form textarea {
+  margin: 1em 0;
+}
+
+.submit h1 {
+  margin: 0;
+}
+
+.submit {
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  bottom: 0;
+}

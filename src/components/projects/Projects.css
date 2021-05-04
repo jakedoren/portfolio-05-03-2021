@@ -21,9 +21,9 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-row-gap: 25px;
+  grid-column-gap: 25px;
 }
 
 .card {
@@ -72,4 +72,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.card ul a {
+  color: #142664;
+}
+.card ul a:hover {
+  color: #3053d3;
 }
