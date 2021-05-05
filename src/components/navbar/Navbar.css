@@ -43,6 +43,62 @@ ul a:hover {
   color: #00e6b3;
 }
 
+.burger {
+  display: none;
+}
+
 .icons-dark:hover {
   color: #04ad89;
+}
+
+.dd-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  left: 0;
+  top: 13vh;
+  z-index: 2;
+}
+
+.dd-list li {
+  width: 100vw;
+  list-style-type: none;
+  background-color: #1f1f1f;
+  padding: 1em 0;
+  z-index: 1;
+  text-align: center;
+}
+.dd-list li:hover {
+  background-color: #4b4b4b;
+}
+
+.dd-list a {
+  color: #00e6b3;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1065px) {
+  .nav-wrap {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .burger {
+    display: flex;
+  }
+  .link-contain ul {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 545px) {
+  .navbar {
+    height: 18vh;
+  }
+
+  .dd-list {
+    top: 18vh;
+  }
 }

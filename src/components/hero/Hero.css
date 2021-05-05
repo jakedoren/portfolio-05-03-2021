@@ -77,3 +77,40 @@
 .icons-dark:hover {
   color: #04ad89;
 }
+
+@media screen and (max-width: 1065px) {
+  .hero-wrap {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .flex1 {
+    flex: 2;
+  }
+}
+@media screen and (max-width: 690px) {
+  .flex2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .herotext-contain h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 313px) {
+  .herotext-contain h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-height: 545px) {
+  .hero {
+    height: 82vh;
+  }
+
+  .flex2 {
+    display: none;
+  }
+}

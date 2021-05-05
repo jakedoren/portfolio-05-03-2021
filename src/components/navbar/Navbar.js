@@ -4,9 +4,16 @@ import {Link} from 'react-router-dom'
 import WbSunnyIcon from '@material-ui/icons/WbSunny';
 import ThemeContext from '../../ThemeContext'
 import Brightness2Icon from '@material-ui/icons/Brightness2';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 
 const Navbar = () => {
     const { dark, toggleDark} = React.useContext(ThemeContext);
+    const [modal, setModal] = useState(false)
+
+    const handleModal = () => {
+        setModal(!modal)
+    }
     
     return (
         <div className={dark ? "navbar nav-dark" : "navbar"} >
@@ -15,6 +22,17 @@ const Navbar = () => {
                     {dark ? <Brightness2Icon style={{color: "white", fontSize: "2.5em"}} /> : <WbSunnyIcon style={{color: '#EEC807', fontSize: '2.5em'}} />}
                 </div>
                 <div className="link-contain">
+                    <div className="burger">
+                        {modal ? <CloseIcon style={{fontSize: "2em", cursor: "pointer", color: dark ? "white" : "black"}} onClick={handleModal} /> :<MenuIcon style={{fontSize: "2em", cursor: "pointer", color: dark ? "white" : "black"}} onClick={handleModal} /> }
+                        {modal ? 
+                        <div className="dd-list">
+                            <Link to="/" className={dark ? "icons-dark" : null}><li className={dark ? "icons-dark" : null}>Home</li></Link>
+                            <Link to="/work" ><li className={dark ? "icons-dark" : null}>Work</li></Link>
+                            <Link to="/contact" ><li className={dark ? "icons-dark" : null}>Contact</li></Link>
+                        </div> :
+                        null
+                        }
+                    </div>
                     <ul>
                         <Link to="/" className={dark ? "icons-dark" : null}><li className={dark ? "icons-dark" : null}>Home</li></Link>
                         <Link to="/work" ><li className={dark ? "icons-dark" : null}>Work</li></Link>
