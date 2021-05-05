@@ -1,5 +1,9 @@
 .contactform {
   height: 87vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
 }
 
 .contactform-dark {
@@ -8,8 +12,8 @@
 
 .contactform-wrapper {
   width: 70%;
-  height: 100%;
-  margin: 0 auto;
+  min-height: 87vh;
+  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,4 +117,37 @@ form textarea {
 .submit-dark:hover {
   -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.17);
+}
+
+@media screen and (max-width: 1292px) {
+  .contactform-wrapper {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .contactform-wrapper form {
+    height: 25em;
+    width: 25em;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contactform-wrapper form div h1 {
+    font-size: 1.5em;
+    margin: 1em;
+  }
+}
+
+@media screen and (max-height: 545px) {
+  .navbar {
+    height: 18vh;
+  }
+
+  .contactform {
+    min-height: 82vh;
+    align-items: flex-start;
+  }
+
+  .contactform-wrapper {
+    min-height: 82vh;
+  }
 }

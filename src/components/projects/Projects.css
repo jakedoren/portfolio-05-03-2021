@@ -127,6 +127,18 @@
   .card {
     height: 23em;
     width: 13em;
-    margin: 0;
+  }
+
+  .bottom h1 {
+    font-size: 1em;
+  }
+
+  .bottom p {
+    font-size: 0.9em;
+    height: 90px;
+  }
+
+  .projects-grid {
+    justify-content: center;
   }
 }
