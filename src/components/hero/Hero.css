@@ -73,3 +73,7 @@
 .icons-dark {
   color: #00e6b3;
 }
+
+.icons-dark:hover {
+  color: #04ad89;
+}

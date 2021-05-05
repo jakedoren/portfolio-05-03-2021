@@ -22,7 +22,7 @@
   list-style: none;
 }
 
-.link-contain ul li {
+.link-contain ul a {
   margin-left: 3em;
 }
 
@@ -37,4 +37,12 @@ ul a:hover {
 
 .sun {
   cursor: pointer;
+}
+
+.icons-dark {
+  color: #00e6b3;
+}
+
+.icons-dark:hover {
+  color: #04ad89;
 }

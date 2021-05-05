@@ -101,3 +101,11 @@
 .darkcard-icons {
   color: #00e6b3;
 }
+
+.darkcard-icons:hover {
+  color: #04ad89;
+}
+
+.icons-dark {
+  color: #00e6b3;
+}
