@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ThemeContext from './ThemeContext'
 
 const ThemeProvider = ({children}) => {
-    const [dark, setDark] = useState(false)
+    const [dark, setDark] = useState(true)
 
     const toggleDark = (e, dark2) => {
         let dark = !dark2

@@ -1,7 +1,8 @@
 .projects {
-  min-height: 87vh;
+  min-height: 82vh;
   width: 100vw;
   display: flex;
+  padding-bottom: 5vh;
 }
 
 .projects-dark {
@@ -25,9 +26,9 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-row-gap: 25px;
-  grid-column-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
 }
 
 .card {
@@ -108,4 +109,24 @@
 
 .icons-dark {
   color: #00e6b3;
+}
+
+@media screen and (max-width: 1292px) {
+  .projects-wrap {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projects-wrap > div > h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    height: 23em;
+    width: 13em;
+    margin: 0;
+  }
 }
