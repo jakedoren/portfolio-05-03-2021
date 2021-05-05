@@ -30,7 +30,9 @@
 }
 
 .hero-img {
-  height: 100%;
+  /* height: 514px; */
+  /* height: 514px; */
+  height: 400px;
 }
 
 .img-contain {
@@ -38,13 +40,14 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  /* align-items: flex-start; */
 }
 
 .herotext-contain {
   height: 60%;
   width: 100%;
   display: flex;
+  /* justify-content: center; */
   flex-direction: column;
 }
 .herotext-contain ul {
