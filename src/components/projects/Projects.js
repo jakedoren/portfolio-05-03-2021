@@ -5,6 +5,7 @@ import CharacterApiImg from '../../assets/characterapi.jpg'
 import CharacterGeneratorImg from '../../assets/charactergenerator.jpg'
 import './Projects.css'
 import ThemeContext from '../../ThemeContext'
+import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const Projects = () => {
     const {dark} = React.useContext(ThemeContext);
@@ -23,6 +24,7 @@ const Projects = () => {
                             <p>Easychat is a web-based chat application allowing users to Join rooms and talk with all users of the room</p>
                             <ul>
                                 <a href="https://github.com/jakedoren/react-socket-chatapp-client" target="_"><li className={dark ? "darkcard-icons" : null}><GitHubIcon /></li></a>
+                                <a href="https://www.youtube.com/watch?v=M7XkJZmYLCQ" target="_"><li className={dark ? "darkcard-icons" : null}><YouTubeIcon style={{fontSize: '1.7em'}}/></li></a>
                                 <a href="https://easierchat.netlify.app/" target="_"><li className={dark ? "darkcard-icons" : null}>Live</li></a>
                             </ul>
                         </div>
@@ -33,7 +35,7 @@ const Projects = () => {
                         </div>
                         <div className="bottom">
                             <h1>Character API</h1>
-                            <p>This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd</p>
+                            <p> This app gathers data from my API and allows you to generate a new character and quote from a Rick and Morty character.</p>
                             <ul>
                                 <a href="https://github.com/jakedoren/ricknmorty-api" target="_"><li className={dark ? "darkcard-icons" : null}><GitHubIcon /></li></a>
                                 <a href="https://compassionate-tesla-e7e979.netlify.app/" target="_"><li className={dark ? "darkcard-icons" : null}>Live</li></a>
@@ -46,7 +48,7 @@ const Projects = () => {
                         </div>
                         <div className="bottom">
                             <h1>Character Gen</h1>
-                            <p>This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd This is a small app that does this, that and this utilizing this that and also this frameworkv sdsfsfafdasfd</p>
+                            <p>This app uses requests to a third party Rick and Morty API to collect a large array of characters from the show and then uses logic to randomly select characters. </p>
                             <ul >
                                 <a href="https://github.com/jakedoren/rickandmorty-gen" target="_" className={dark ? "icons-dark" : null}><li className={dark ? "darkcard-icons" : null}><GitHubIcon /></li></a>
                                 <a href="https://sharp-blackwell-56aa0f.netlify.app/" target="_"><li className={dark ? "darkcard-icons" : null}>Live</li></a>

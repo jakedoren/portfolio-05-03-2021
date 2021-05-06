@@ -91,7 +91,7 @@
     flex: 2;
   }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 710px) {
   .flex2 {
     display: none;
   }
@@ -115,5 +115,11 @@
 
   .flex2 {
     display: none;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .hero-img {
+    height: 350px;
   }
 }

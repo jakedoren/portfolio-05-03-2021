@@ -19,7 +19,8 @@
   justify-content: center;
 }
 
-.contactform-wrapper form {
+.form {
+  background-color: #e0dede;
   height: 25em;
   width: 30em;
   display: flex;
@@ -30,6 +31,7 @@
   box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.17);
   transition: all 0.3s ease-in-out;
 }
+
 .contactform-wrapper form:hover {
   -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.37);
@@ -78,11 +80,16 @@ form textarea {
 
 .submit h1 {
   margin: 0;
+  color: #fff;
 }
 
 .submit {
   position: absolute;
-  background-color: rgb(216, 211, 211);
+  /* background-color: rgb(216, 211, 211); */
+  /* background-color: #00e6b3; */
+  background-color: #385ff0;
+  /* background-color: #03ac87; */
+  /* background-color: #142664; */
   width: 100%;
   cursor: pointer;
   padding: 10px;
@@ -117,6 +124,10 @@ form textarea {
 .submit-dark:hover {
   -webkit-box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 5px 8px 0px rgba(0, 0, 0, 0.17);
+}
+
+.input-light {
+  border: 1px solid #637286;
 }
 
 @media screen and (max-width: 1292px) {
