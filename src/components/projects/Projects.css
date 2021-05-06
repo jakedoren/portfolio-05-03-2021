@@ -68,7 +68,7 @@
 .bottom p {
   margin: 0;
   height: 120px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .bottom h1 {

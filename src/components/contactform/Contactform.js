@@ -6,15 +6,20 @@ import ThemeContext from '../../ThemeContext'
 const Contactform = () => {
     const {dark} = React.useContext(ThemeContext);
 
+    const handleSubmit = () => {
+        alert('Message recieved, I will get back to you shortly!')
+    }
+
     return (
         <div className={dark ? "contactform contactform-dark" : "contactform"}>
             <div className="contactform-wrapper">
-                <form action="POST" data-netlify="true" className={dark ? "form-dark form" : "form"} name="contact" >
+                <form method="POST" data-netlify="true" className={dark ? "form-dark form" : "form"} name="contact" onSubmit={handleSubmit}>
                     <div>
                         <h1 style={{color: dark ? "white" : null}}>Get In Touch</h1>
                     </div>
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="name">
-                       <input type="text" name="name" id="name" placeholder="name" className={dark ? "input-dark" : "input-light"}/> 
+                       <input type="text" name="name" id="name" placeholder="name" className={dark ? "input-dark" : "input-light"} /> 
                     </div>
                     <div className="email">
                         <input type="email" name="email" id="email" placeholder="email" className={dark ? "input-dark" : "input-light"} />
