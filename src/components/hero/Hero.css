@@ -1,10 +1,12 @@
 .hero {
   height: 87vh;
+  overflow-y: auto;
 }
 
 .hero-dark {
   height: 87vh;
   background-color: #424b58;
+  overflow-y: auto;
 }
 
 .hero-wrap {
@@ -40,14 +42,12 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  /* align-items: flex-start; */
 }
 
 .herotext-contain {
-  height: 60%;
+  min-height: 60%;
   width: 100%;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
 }
 .herotext-contain ul {
