@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className={dark ? "navbar nav-dark" : "navbar"} >
             <div className="nav-wrap">
                 <div onClick={e => toggleDark(e,dark)} className="sun">
-                    {dark ? <Brightness2Icon style={{color: "white", fontSize: "2.5em"}} /> : <WbSunnyIcon style={{color: '#EEC807', fontSize: '2.5em'}} />}
+                    {dark ? <Brightness2Icon style={{color: "white", fontSize: "3.5em"}} /> : <WbSunnyIcon style={{color: '#EEC807', fontSize: '3.5em'}} />}
                 </div>
                 <div className="link-contain">
                     <div className="burger">

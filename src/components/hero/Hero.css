@@ -32,9 +32,7 @@
 }
 
 .hero-img {
-  /* height: 514px; */
-  /* height: 514px; */
-  height: 400px;
+  height: 480px;
 }
 
 .img-contain {
@@ -62,15 +60,22 @@
 }
 
 .herotext-contain h1 {
-  font-size: 4em;
+  font-size: 5em;
   margin-bottom: 0;
 }
+
 .herotext-contain p {
-  font-size: 2em;
+  font-size: 2.5em;
+  color: #dd446b;
+  margin-bottom: 1.3em;
 }
 
 .herotext-dark {
   color: #fff;
+}
+
+.herotext-light {
+  color: #2b2b2b;
 }
 
 .icons-dark {
@@ -79,6 +84,18 @@
 
 .icons-dark:hover {
   color: #04ad89;
+}
+
+.hero-img {
+  animation: cosmo 3s ease-in-out infinite alternate;
+}
+
+@keyframes cosmo {
+  from {
+    transform: translateY(-10px);
+  } to {
+    transform: translateY(10px);
+  }
 }
 
 @media screen and (max-width: 1292px) {

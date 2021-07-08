@@ -21,7 +21,7 @@ const Projects = () => {
                         </div>
                         <div className="bottom">
                             <h1>Easychat</h1>
-                            <p>Easychat is a web-based chat application allowing users to Join rooms and talk with all users of the room</p>
+                            <p>Easychat is a web-based chat application allowing users to Join rooms and talk with all users of the room.</p>
                             <ul>
                                 <a href="https://github.com/jakedoren/react-socket-chatapp-client" target="_"><li className={dark ? "darkcard-icons" : null}><GitHubIcon /></li></a>
                                 <a href="https://www.youtube.com/watch?v=M7XkJZmYLCQ" target="_"><li className={dark ? "darkcard-icons" : null}><YouTubeIcon style={{fontSize: '1.7em'}}/></li></a>
@@ -48,7 +48,7 @@ const Projects = () => {
                         </div>
                         <div className="bottom">
                             <h1>Character Gen</h1>
-                            <p>This app uses requests to a third party Rick and Morty API to collect a large array of characters from the show and then uses logic to randomly select characters. </p>
+                            <p>This app uses requests to a third party Rick and Morty API to collect a random character and display key data about them.</p>
                             <ul >
                                 <a href="https://github.com/jakedoren/rickandmorty-gen" target="_" className={dark ? "icons-dark" : null}><li className={dark ? "darkcard-icons" : null}><GitHubIcon /></li></a>
                                 <a href="https://sharp-blackwell-56aa0f.netlify.app/" target="_"><li className={dark ? "darkcard-icons" : null}>Live</li></a>
