@@ -3,6 +3,7 @@ import easierchat from '../../assets/easierchat.jpg'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import CharacterApiImg from '../../assets/characterapi.jpg'
 import CharacterGeneratorImg from '../../assets/charactergenerator.jpg'
+import InvincibleImg from '../../assets/invincible.png'
 import './Projects.css'
 import ThemeContext from '../../ThemeContext'
 import YouTubeIcon from '@material-ui/icons/YouTube';
@@ -26,6 +27,19 @@ const Projects = () => {
                                 <a href="https://github.com/jakedoren/react-socket-chatapp-client" target="_"><li className={dark ? "darkcard-icons" : null}><GitHubIcon /></li></a>
                                 <a href="https://www.youtube.com/watch?v=M7XkJZmYLCQ" target="_"><li className={dark ? "darkcard-icons" : null}><YouTubeIcon style={{fontSize: '1.7em'}}/></li></a>
                                 <a href="https://easierchat.netlify.app/" target="_"><li className={dark ? "darkcard-icons" : null}>Live</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={dark ? "card card-dark" : "card"}>
+                        <div className="top">
+                            <img src={InvincibleImg} className="card-img"/>
+                        </div>
+                        <div className="bottom">
+                            <h1>Invincible API (WIP)</h1>
+                            <p>The Invincible API is a restful API for characters, quotes, episodes and more from Amazon Prime’s Invincible. </p>
+                            <ul >
+                                <a href="https://github.com/jakedoren/Invincible-APIv3" target="_" className={dark ? "icons-dark" : null}><li className={dark ? "darkcard-icons" : null}><GitHubIcon /></li></a>
+                                <a href="http://invincible-api.herokuapp.com/" target="_"><li className={dark ? "darkcard-icons" : null}>Live</li></a>
                             </ul>
                         </div>
                     </div>
