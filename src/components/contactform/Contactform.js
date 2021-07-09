@@ -47,7 +47,6 @@ const Contactform = () => {
                 <form className={dark ? "form-dark form" : "form"} >
                     <div>
                         <h1 style={{color: dark ? "white" : null}}>Get In Touch</h1>
-                        {formResponse && <p>{formResponse}</p>}
                     </div>
                     <div className="name">
                        <input type="text" name="name" id="name" placeholder="name" className={dark ? "input-dark" : "input-light"} onChange={ handleChange} value={formInfo.name} /> 
