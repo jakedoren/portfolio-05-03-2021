@@ -26,21 +26,19 @@ const Contactform = () => {
        e.preventDefault()
 
        axios.post('http://localhost:8080/', formInfo)
-            .then((result) => {
-                setFormResponse(result.data.success)
-                setFormInfo({
-                    name: '',
-                    email: '',
-                    message: ''
-                })
+        .then((result) => {
+            setFormResponse(result.data.success)
+            setFormInfo({
+                name: '',
+                email: '',
+                message: ''
             })
-            .catch((err) => {
-                setFormResponse(err.response.data.errorMessage)
-                
-            })
+        })
+        .catch((err) => {
+            setFormResponse(err.response.data.errorMessage)
+            
+        })
          
-        
-    
     }
 
     return (
