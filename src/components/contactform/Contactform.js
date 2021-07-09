@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './Contactform.css'
 import ThemeContext from '../../ThemeContext'
 import axios from 'axios'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 
 const Contactform = () => {
@@ -14,7 +16,6 @@ const Contactform = () => {
     })
 
     const [ formResponse, setFormResponse ] = useState('')
-    const [ error, setError ] = useState(false)
 
     const handleChange = (e) => {
         setFormInfo({
@@ -28,18 +29,17 @@ const Contactform = () => {
        axios.post('http://localhost:8080/', formInfo)
         .then((result) => {
             setFormResponse(result.data.success)
-            setFormInfo({
-                name: '',
-                email: '',
-                message: ''
-            })
+            toast(result.data.success)
+            setFormInfo({name: '', email: '', message: ''})
         })
         .catch((err) => {
             setFormResponse(err.response.data.errorMessage)
-            
+            toast(err.response.data.errorMessage)
         })
          
     }
+
+    toast.configure()
 
     return (
         <div className={dark ? "contactform contactform-dark" : "contactform"}>
