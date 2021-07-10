@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const Contactform = () => {
     const {dark} = React.useContext(ThemeContext);
-    const emailService = 'https://portfolio-site-contact-service.herokuapp.com/'
+    const emailService = 'https://email-service-nr4to.ondigitalocean.app/';
 
     const [ formInfo, setFormInfo ] = useState({
         name: '',
