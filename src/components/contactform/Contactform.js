@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const Contactform = () => {
     const {dark} = React.useContext(ThemeContext);
+    const emailService = 'https://portfolio-site-contact-service.herokuapp.com/'
 
     const [ formInfo, setFormInfo ] = useState({
         name: '',
@@ -26,7 +27,7 @@ const Contactform = () => {
     const  handleSubmit = async (e) => {
        e.preventDefault()
 
-       axios.post('http://localhost:8080/', formInfo)
+       axios.post(emailService, formInfo)
         .then((result) => {
             setFormResponse(result.data.success)
             toast.success(result.data.success)
