@@ -29,12 +29,12 @@ const Contactform = () => {
        axios.post('http://localhost:8080/', formInfo)
         .then((result) => {
             setFormResponse(result.data.success)
-            toast(result.data.success)
+            toast.success(result.data.success)
             setFormInfo({name: '', email: '', message: ''})
         })
         .catch((err) => {
             setFormResponse(err.response.data.errorMessage)
-            toast(err.response.data.errorMessage)
+            toast.error(err.response.data.errorMessage)
         })
          
     }
