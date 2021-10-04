@@ -27,9 +27,9 @@ const About = () => {
                     </p>
                     <h2><strong>My Strongest Stack</strong></h2>
                     <img src={MongoDbImage} alt="mongodb" />
-                    <img src={ExpressImage} alt="mongodb" />
-                    <img src={ReactImage} alt="mongodb" />
-                    <img src={NodeImage} alt="mongodb" />
+                    <img src={ExpressImage} alt="express" />
+                    <img src={ReactImage} alt="react" />
+                    <img src={NodeImage} alt="node" />
                 </div>
             </div>
             
