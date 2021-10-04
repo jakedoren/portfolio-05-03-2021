@@ -26,10 +26,10 @@ const Navbar = () => {
                         {modal ? <CloseIcon style={{fontSize: "2em", cursor: "pointer", color: dark ? "white" : "black"}} onClick={handleModal} /> :<MenuIcon style={{fontSize: "2em", cursor: "pointer", color: dark ? "white" : "black"}} onClick={handleModal} /> }
                         {modal ? 
                         <div className="dd-list">
-                            <Link to="/" className={dark ? "icons-dark" : null}><li className={dark ? "icons-dark" : null}>Home</li></Link>
-                            <Link to="/work" ><li className={dark ? "icons-dark" : null}>Work</li></Link>
-                            <Link to="/contact" ><li className={dark ? "icons-dark" : null}>Contact</li></Link>
-                            <Link to="/about" ><li className={dark ? "icons-dark" : null}>About</li></Link>
+                            <Link to="/" className={dark ? "icons-dark" : null}><li className={dark ? "icons-dark" : null} onClick={handleModal} >Home</li></Link>
+                            <Link to="/work" ><li className={dark ? "icons-dark" : null} onClick={handleModal} >Work</li></Link>
+                            <Link to="/contact" ><li className={dark ? "icons-dark" : null} onClick={handleModal} >Contact</li></Link>
+                            <Link to="/about" ><li className={dark ? "icons-dark" : null} onClick={handleModal} >About</li></Link>
                         </div> :
                         null
                         }
