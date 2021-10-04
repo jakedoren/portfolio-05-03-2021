@@ -16,18 +16,19 @@ $darkText: #00e6b3;
 }
 
 .about-wrap {
-    width: 70%;
+    width: 50%;
     height: 90%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
     // background-color: blue;
 }
 
 .message-container {
-    width: 80%;
-    height: 90%;
+    // width: 80%;
+    // height: 90%;
     display: flex;
     // background-color: blueviolet;
 
@@ -68,5 +69,18 @@ $darkText: #00e6b3;
     img {
         height: 200px;
         border-radius: 100%;
+    }
+}
+
+strong {
+    color: #dd446b;
+}
+
+.me-paragraph {
+    color: #f1f1f1;
+
+    img {
+        height: 70px;
+        margin-right: 2em;
     }
 }
