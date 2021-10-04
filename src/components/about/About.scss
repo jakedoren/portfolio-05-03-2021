@@ -1,0 +1,159 @@
+$darkBg: #424b58;
+$darkText: #00e6b3;
+$lightText: #142664;
+
+.about {
+    height: 87vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+  
+.about-dark {
+    height: 87vh;
+    background-color: $darkBg;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+}
+
+.about-wrap {
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container {
+    display: flex;
+
+    .left-text, .right-text {
+        flex: 1;
+        margin: 1em 0;
+    }
+
+    .right-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    span {
+        display: block;
+        height: 200px;
+        width: 200px;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        border: 0.5em solid $darkText;
+        padding: 0.5em;
+    }
+
+
+    h2 {
+        color: $darkText;
+        font-size: 4em;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin: 0em 0;
+    }
+
+    h1, p {
+        color: #f1f1f1;
+    }
+
+    strong {
+        color: #dd446b;
+        font-size: 1.5em;
+    }
+
+    img {
+        height: 200px;
+        border-radius: 100%;
+    }
+}
+
+
+
+.lightmode-text {
+    color: $lightText
+}
+
+strong {
+    color: #dd446b;
+}
+
+.me-paragraph {
+    color: #f1f1f1;
+
+    img {
+        height: 70px;
+        margin-right: 2em;
+    }
+}
+
+.tech-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    justify-content: center;
+    grid-row-gap: 30px;
+    grid-column-gap: 20px;
+}
+
+@media screen and (max-width: 1380px) {
+    .about-wrap {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 988px) {
+    .about-wrap {
+        width: 80%;
+    }
+}
+  @media screen and (max-width: 890px) {
+    .about-wrap {
+        width: 90%;
+    }
+}
+  @media screen and (max-width: 770px) {
+    .message-container {
+        display: block;
+    }
+
+    .tech-images {
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        justify-content: flex-start;
+    }
+}
+  
+  @media screen and (max-width: 500px) {
+    .message-container {
+        h1, h2 {
+            font-size: 2.5em;
+        }
+
+        img {
+            height: 180px;
+        }
+
+        span {
+            height: 180px;
+            width: 180px;
+        }
+    }
+}
+  @media screen and (max-width: 313px) {
+
+}
+  
+  @media screen and (max-height: 545px) {
+
+}
+  
+  @media screen and (max-height: 580px) {
+    
+}
