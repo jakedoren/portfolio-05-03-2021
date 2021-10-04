@@ -29,7 +29,7 @@ const Navbar = () => {
                             <Link to="/" className={dark ? "icons-dark" : null}><li className={dark ? "icons-dark" : null}>Home</li></Link>
                             <Link to="/work" ><li className={dark ? "icons-dark" : null}>Work</li></Link>
                             <Link to="/contact" ><li className={dark ? "icons-dark" : null}>Contact</li></Link>
-                            <Link to="/contact" ><li className={dark ? "icons-dark" : null}>About</li></Link>
+                            <Link to="/about" ><li className={dark ? "icons-dark" : null}>About</li></Link>
                         </div> :
                         null
                         }
