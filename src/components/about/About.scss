@@ -5,14 +5,13 @@ $lightText: #142664;
 
 
 .about {
-    height: 87vh;
-    overflow-y: auto;
+    min-height: 87vh;
     display: flex;
     align-items: center;
 }
 
 .about-dark {
-    height: 87vh;
+    min-height: 87vh;
     background-color: $darkBg;
     overflow-y: auto;
     display: flex;
