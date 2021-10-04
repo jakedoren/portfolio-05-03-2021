@@ -2,13 +2,15 @@ $darkBg: #424b58;
 $darkText: #00e6b3;
 $lightText: #142664;
 
+
+
 .about {
     height: 87vh;
     overflow-y: auto;
     display: flex;
     align-items: center;
 }
-  
+
 .about-dark {
     height: 87vh;
     background-color: $darkBg;
@@ -18,11 +20,22 @@ $lightText: #142664;
 }
 
 .about-wrap {
-    width: 50%;
+    width: 40%;
     height: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    background-color: rgb(27, 26, 26);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.about-wrap-light {
+    box-shadow: -1px 7px 27px 0px rgba(0,0,0,0.29);
+    -webkit-box-shadow: -1px 7px 27px 0px rgba(0,0,0,0.29);
+    -moz-box-shadow: -1px 7px 27px 0px rgba(0,0,0,0.29);
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 .message-container {
@@ -34,9 +47,14 @@ $lightText: #142664;
     }
 
     .right-text {
+        flex: 2;
+    }
+
+    .right-text {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: center;
     }
 
     span {
@@ -89,6 +107,14 @@ strong {
 .me-paragraph {
     color: #f1f1f1;
 
+    p {
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-bottom: 0.2em;
+    }
+
     img {
         height: 70px;
         margin-right: 2em;
@@ -103,25 +129,54 @@ strong {
     grid-column-gap: 20px;
 }
 
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1719px) {
+    .about-wrap {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1378px) {
+    .about-wrap {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1136px) {
     .about-wrap {
         width: 70%;
     }
 }
 
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 852px) {
     .about-wrap {
         width: 80%;
     }
 }
-  @media screen and (max-width: 890px) {
-    .about-wrap {
-        width: 90%;
-    }
-}
+
+
   @media screen and (max-width: 770px) {
     .message-container {
         display: block;
+
+        .right-text {
+            align-items: flex-start;
+        }
+    }
+
+    .me-paragraph {
+        h2 {
+            margin-top: 0;
+        }
+    }
+
+    .about-wrap {
+        background-color: transparent;
+    }
+
+    .about-wrap-light {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
     }
 
     .tech-images {
