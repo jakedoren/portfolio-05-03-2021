@@ -1,11 +1,11 @@
-import './App.css';
+import './App.css'
 import React, {useState, useEffect} from 'react'
-import Home from './components/pages/Home';
+import Home from './components/pages/Home'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
-import Work from './components/pages/Work';
+import Work from './components/pages/Work'
 import Contact from './components/pages/Contact'
-import ThemeContext, {defaultState} from './ThemeContext'
-import ThemeProvider from './ThemeProvider';
+import ThemeProvider from './ThemeProvider'
+import About from './components/pages/About'
 
 function App() {
 
@@ -14,12 +14,13 @@ function App() {
       <ThemeProvider>
         <Router>
           <Route path="/" exact component={Home} />
-          <Route path="/work" exact component={Work} />
-          <Route path="/contact" exact component={Contact} />
+          <Route path="/work" component={Work} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
         </Router>
       </ThemeProvider>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
