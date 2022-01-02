@@ -32,7 +32,6 @@ const Contactform = () => {
     const handleSubmit = async (e) => {
        e.preventDefault()
        const responseObj = await validateEmailInfo(formInfo)
-       console.log(responseObj.error)
        if(responseObj.error) {
            toast.error(responseObj.message)
        }
