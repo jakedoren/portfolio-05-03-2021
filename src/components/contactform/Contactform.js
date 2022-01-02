@@ -1,14 +1,15 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Contactform.css'
 import ThemeContext from '../../ThemeContext'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { validateEmailInfo } from '../../helper/helper'
 
 
 const Contactform = () => {
     const {dark} = React.useContext(ThemeContext);
-    const emailService = 'https://email-service-nr4to.ondigitalocean.app/';
+    const emailService = process.env.REACT_APP_CONTACT_SERVICE;
 
     const [ formInfo, setFormInfo ] = useState({
         name: '',
@@ -16,28 +17,33 @@ const Contactform = () => {
         message: ''
     })
 
-    const [ formResponse, setFormResponse ] = useState('')
-
     const handleChange = (e) => {
         setFormInfo({
             ...formInfo, [e.target.name] : e.target.value
         })
     }
 
-    const  handleSubmit = async (e) => {
-       e.preventDefault()
+    useEffect(() => {
+        // Wake up those dynos!
+        axios.get(emailService)
+    }, [])
 
-       axios.post(emailService, formInfo)
+    const handleSubmit = async (e) => {
+       e.preventDefault()
+       const responseObj = await validateEmailInfo(formInfo)
+       console.log(responseObj.error)
+       if(responseObj.error) {
+           toast.error(responseObj.message)
+       }
+       !responseObj.error && axios.post(emailService, formInfo)
         .then((result) => {
-            setFormResponse(result.data.success)
+            console.log(result)
             toast.success(result.data.success)
             setFormInfo({name: '', email: '', message: ''})
         })
         .catch((err) => {
-            setFormResponse(err.response.data.errorMessage)
             toast.error(err.response.data.errorMessage)
         })
-         
     }
 
     toast.configure()
