@@ -26,7 +26,6 @@ const Contactform = () => {
     useEffect(() => {
         // Wake up those dynos!
         axios.get(emailService)
-            .then(result => console.log(result))
             .catch(err => console.log(err))
     }, [])
 

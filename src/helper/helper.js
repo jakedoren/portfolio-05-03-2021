@@ -1,5 +1,4 @@
-
-exports.validateEmailInfo = async (formInfo) => {
+export function validateEmailInfo(formInfo) {
     const responseObject = { error: '', message: '' }
     const { name, email, message } = formInfo
     if(!name || !email || !message) {
